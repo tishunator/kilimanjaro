@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', // даже пустой файл нужен
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js', // пустой JS, можно не использовать
+    filename: 'bundle.js',
     clean: true
   },
   module: {
@@ -14,7 +15,7 @@ module.exports = {
       {
         test: /\.pug$/,
         loader: 'pug-loader',
-        options: { pretty: true } // читаемый HTML
+        options: { pretty: true }
       },
       {
         test: /\.scss$/,
@@ -23,20 +24,32 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/img/[name][ext]'
+        }
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/pug/pages/index.pug' // главная Pug-страница
+      template: './src/pug/pages/index.pug'
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/assets', to: 'assets' } // скопирует все файлы из src/assets в dist/assets
+      ]
     })
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist') // теперь Dev Server видит HTML
+      directory: path.join(__dirname, 'dist') // dev-server видит все из dist, включая картинки
     },
     hot: true,
     open: true

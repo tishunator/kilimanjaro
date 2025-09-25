@@ -1,0 +1,24 @@
+section.booking
+  .booking__container
+    h2.booking__title.sr-only Booking
+
+    .booking__options
+      .booking__field 
+        span.booking__label Location
+        button.booking__value.booking__value--location(type="button") Enter your destination
+          img.booking__icon.booling__icon--location(src="assets/icons/location.svg" alt="location")
+
+      .booking__field
+        span.booking__label.ml-37 Activity
+        button.booking__value.booking__value--activity.ml-37(type="button") Tours &#38;Trips
+          img.booking__icon.ml-13(src="assets/icons/activity.svg" alt="activity")
+
+      .booking__field
+        span.booking__label Date
+        button.booking__value.booking__value--date(type="button") Set date
+          img.booking__icon(src="assets/icons/date.svg" alt="date")
+
+      .booking__action
+        button.booking__button(type="submit" aria-label="Search")
+          span.booking__search-icon
+        div.booking__button-caption Check Availability

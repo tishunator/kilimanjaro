@@ -1,0 +1,32 @@
+@use "../base/variables" as *;
+
+.header {
+color: $color-heading;
+display: flex;
+flex-direction: row;
+padding-top: 37px;
+padding-bottom: 37px;
+}
+
+.header__nav {
+  align-content: center;
+}
+
+.header__logo {
+  font-weight: 600;
+  font-size: 30px;
+}
+.header__list{
+  display: flex;
+  flex-direction: row;
+  gap: 59px;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 95px;
+}
+
+.header__item {
+  display: inline-block;
+  min-width: 102px;
+}
+

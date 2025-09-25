@@ -1,0 +1,150 @@
+@use "../base/variables" as *;
+
+.hero {
+  position: relative;
+  padding-top: 56px;
+}
+
+.hero__background img {
+  position: absolute;
+  z-index: -1;
+}
+
+.section-title {
+position: relative;
+padding-left: 40px;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  bottom:50%;
+  left: 0;
+  background-color: $color-white;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 128px;
+  color: $color-white;
+  margin-top: 10px;
+  letter-spacing: -2.56px;
+}
+
+.hero__content {
+  color: $color-white;
+  padding-top: 108px;
+  padding-left: 136px;
+  padding-right: 83px;
+}
+
+.hero__info {
+display: flex;
+justify-content: space-between;
+  padding-top: 38px;
+}
+
+.hero__payment {
+  position: relative;
+  width: 350px;
+}
+.hero__payment-text {
+margin-bottom: 7px;
+}
+
+.hero__payment::before {
+  content: "";
+  position: absolute;
+  left: -25%;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  background: url("../assets/icons/cards.png");
+}
+
+.hero__payment a {
+  text-decoration: underline;
+}
+
+.hero__payment-link {
+  font-weight: 700;
+  color: $color-white;  
+}
+
+.hero__arrows {
+  padding-top: 33px;
+}
+
+.hero__arrow--prev{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;        
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid $color-white;;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hero__arrow--prev::before {
+  content: '';
+  position: absolute;
+  width: 10px;       
+  height: 2px;       
+  background-color: $color-white;;
+  left: 17px;         
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero__arrow--prev::after {
+  content: '';
+  position: absolute;
+  width: 10px;          
+  height: 10px;
+  border-top: 2px solid $color-white;;
+  border-left: 2px solid $color-white;;
+  left: 16px;         
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.hero__arrow--next {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;         
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid $color-white;;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hero__arrow--next::before {
+  content: '';
+  position: absolute;
+  width: 10px;         
+  height: 2px;         
+  background-color: $color-white;;
+  left: 16px;    
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero__arrow--next::after {
+  content: '';
+  position: absolute;
+  width: 10px;         
+  height: 10px;
+  border-top: 2px solid $color-white;;
+  border-left: 2px solid $color-white;;
+  left: 16px;         
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg); 
+}

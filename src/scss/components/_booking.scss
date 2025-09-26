@@ -108,3 +108,23 @@
   margin-top: -14px;
   font-size: 12px;
 }
+
+.booking__field:first-child::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 27px;
+  width: 1px;
+  height: 56px;
+  background-color: #DCE5EB;
+}
+
+.booking__field:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 63px;
+  width: 1px;
+  height: 56px;
+  background-color: #DCE5EB;
+}

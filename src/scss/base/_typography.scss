@@ -7,13 +7,26 @@ body {
   color: $color-primary;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $color-heading;
 }
+
 a {
   color: $color-heading;
- 
+
 }
-ul{
+
+ul {
   list-style-type: none;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+  color: $color-primary;
 }

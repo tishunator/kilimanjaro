@@ -1,0 +1,147 @@
+@use "../base/variables" as *;
+
+.tours__description-container {
+  width: 1300px;
+  padding-top: 160px;
+  padding-left: 3px;
+}
+
+.tours__header {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.64px
+}
+
+.tours__description {
+  margin-top: 17px;
+  letter-spacing: -0.38px;
+}
+
+.tours__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 54px;
+  gap: 32px;
+}
+
+.tour {
+  box-shadow: 0px 2px 4px 0px #0E567C29;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 31px;
+  min-height: 614px;
+}
+
+.tour__information {
+  position: relative;
+  padding-left: 16px;
+  padding-top: 33px;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; // чтобы заняло всю высоту карточки
+}
+
+.tour__button {
+  position: absolute;
+  top: 36px;
+  right: 18px;
+  padding: 8px 8px;
+  border-radius: 50%;
+  background-color: #fbfbfb;
+}
+
+.tour__name {
+  font-size: 24px;
+  letter-spacing: -0.38px;
+
+}
+
+.tour__location {
+  font-size: 16px;
+  color: $color-primary-ligth;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  max-width: 390px;
+}
+
+.price {
+  position: relative;
+  font-size: 14px;
+  color: $color-primary;
+}
+
+.tour__footer {
+  margin-top: auto; // прижимает футер к низу карточки
+}
+
+.price__note {
+  letter-spacing: 0;
+}
+
+.price__value {
+  font-weight: 600;
+  font-size: 32px;
+  color: $color-heading;
+  letter-spacing: -0.48px;
+}
+
+.tours__rating {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  position: absolute;
+  top: 138px;
+  right: 17px;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.tours__score {
+  font-size: 14px;
+  text-align: right;
+  margin-right: -4px;
+}
+
+.tour__bottom {
+  font-size: 16px;
+  margin-left: 25px;
+  margin-top: 36px;
+  margin-bottom: 3px;
+}
+
+.tour__duration {
+  position: relative;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.tour__cancellation {
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.tour__duration::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+  background: url('/src/assets/icons/duration.svg')
+}
+
+.tour__cancellation::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -23px;
+  width: 12px;
+  height: 8px;
+  background: url('/src/assets/icons/checkmark.svg')
+}

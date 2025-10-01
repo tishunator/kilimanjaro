@@ -1,0 +1,114 @@
+@use "../base/variables" as *;
+
+.guides {
+  padding-top: 180px;
+  padding-left: 17px;
+}
+
+.guides__description {
+  padding-top: 15px;
+  letter-spacing: -0.38px;
+}
+
+.guid {
+  display: flex;
+  padding-top: 63px;
+}
+
+.guid__role {
+  letter-spacing: -0.38px;
+  color: $color-accent;
+}
+
+.guid__name {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -0.38px;
+  color: $color-heading;
+  max-width: 270px;
+  margin-top: 16px;
+}
+
+.guid__information-header {
+  font-weight: 400;
+  letter-spacing: -0.38px;
+  color: #000000;
+  margin-bottom: 18px;
+
+}
+
+.guid__information {
+  display: flex;
+  padding-top: 97px;
+  gap: 68px;
+}
+
+.guid__socials {
+  margin-top: auto;
+  display: flex;
+  gap: 36px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.guid__right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  padding-top: 39px;
+  padding-bottom: 73px;
+  max-width: 784px;
+}
+
+.guid__information-desc {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.glide {
+  position: relative;
+
+  .glide__arrows {
+    position: absolute;
+    top: -3%;
+    right: -1%;
+    display: flex;
+    gap: 15px;
+    transform: translateY(-50%);
+  }
+
+  .glide__arrow {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: solid 1px $color-primary;
+    background-color: $color-white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    svg {
+      width: 11px;
+      height: 20px;
+    }
+  }
+
+
+  .glide__arrow--right,
+  .glide__arrow--left {
+    position: static;
+  }
+
+  .glide__arrow:hover {
+    background-color: $color-accent !important;
+
+  }
+
+  .glide__arrow:hover svg path {
+    stroke: #fff !important;
+
+  }
+}

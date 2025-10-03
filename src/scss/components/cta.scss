@@ -1,0 +1,44 @@
+@use "../base/variables" as *;
+
+.cta {
+  position: relative;
+  padding-top: 233px;
+}
+
+.cta__bg img {
+  position: absolute;
+  left: 16px;
+  z-index: -1;
+}
+
+.cta__information {
+  text-align: center;
+  margin-left: 28px;
+  padding-top: 73px;
+}
+
+.cta__title {
+  font-weight: 500;
+  font-size: 56px;
+  color: $color-white;
+  letter-spacing: -0.38px;
+}
+
+.cta__description {
+  font-size: 32px;
+  color: #bcf0ec;
+  letter-spacing: -0.38px;
+  margin-top: 26px;
+  margin-bottom: 81px;
+}
+
+.cta__btn {
+  padding: 22px 40px;
+  background-color: $color-white;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+  border-radius: 40px;
+  letter-spacing: -0.38px;
+  color: $color-accent;
+}

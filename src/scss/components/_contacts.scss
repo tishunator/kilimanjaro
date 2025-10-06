@@ -1,0 +1,80 @@
+@use "../base/variables" as *;
+
+.contacts {
+  text-align: center;
+  padding-top: 128px;
+  padding-left: 32px;
+}
+
+.contacts__container {
+  display: flex;
+  gap: 32px;
+  padding-top: 72px;
+  padding-left: 119px;
+  border-radius: 12px;
+}
+
+.contacts__text {
+  letter-spacing: -0.38px;
+  margin-top: 15px;
+}
+
+.contact {
+  position: relative;
+  padding-left: 141px;
+  padding-right: 141px;
+  padding-bottom: 55px;
+  background-color: $color-accent;
+  border-radius: 12px;
+  color: white;
+
+}
+
+.contacts__bg {
+  position: absolute;
+  top: 40px;
+  left: -63px;
+  z-index: -1;
+}
+
+.contact:nth-child(2n) {
+  background-color: $color-heading;
+}
+
+.contact:nth-child(2n) .contact__text {
+  color: $color-primary-ligth;
+}
+
+.contact__img {
+  padding-bottom: 46px;
+}
+
+.contact__container {
+  max-width: 366px;
+  padding-top: 72px;
+}
+
+.contact__header {
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: -0.51px;
+  color: white;
+}
+
+.contact__text {
+  font-size: 24px;
+  letter-spacing: -0.38px;
+  margin-top: 24px;
+  color: #BCF0EC;
+}
+
+.contact__bottom {
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.38px;
+  margin-top: 48px;
+}
+
+.contact__number {
+  margin-top: 10px;
+}

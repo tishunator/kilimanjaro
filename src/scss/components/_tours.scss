@@ -40,7 +40,7 @@
   letter-spacing: 0.5px;
   display: flex;
   flex-direction: column;
-  height: 100%; // чтобы заняло всю высоту карточки
+  height: 100%;
 }
 
 .tour__button {
@@ -73,7 +73,7 @@
 }
 
 .tour__footer {
-  margin-top: auto; // прижимает футер к низу карточки
+  margin-top: auto;
 }
 
 .price__note {

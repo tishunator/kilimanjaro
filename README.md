@@ -29,7 +29,7 @@ npm run dev
 5. Собрать проект для продакшена
 npm run build
 
-Стек
+**Стек**
 HTML (через Pug)  
 SCSS  
 JavaScript (ES6+)  
@@ -37,7 +37,7 @@ Webpack
 CopyWebpackPlugin, MiniCssExtractPlugin, HtmlWebpackPlugin
 
 
-Скрипты в package.json    
+**Скрипты в package.json**   
 {  
   "scripts": {  
     "dev": "webpack serve",  

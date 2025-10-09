@@ -38,6 +38,13 @@ module.exports = {
         generator: {
           filename: 'assets/img/[name][ext]'
         }
+      },
+      {
+        test: /\.(woff2?|ttf|eot|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext]'
+        }
       }
     ]
   },
@@ -50,13 +57,13 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/assets', to: 'assets' } // скопирует все файлы из src/assets в dist/assets
+        { from: 'src/assets', to: 'assets' }
       ]
     })
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist') // dev-server видит все из dist, включая картинки
+      directory: path.join(__dirname, 'dist')
     },
     hot: true,
     open: true

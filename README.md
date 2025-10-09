@@ -30,35 +30,35 @@ npm run dev
 npm run build
 
 Стек
-HTML (через Pug)
-SCSS
-JavaScript (ES6+)
-Webpack
+HTML (через Pug)  
+SCSS  
+JavaScript (ES6+)  
+Webpack  
 CopyWebpackPlugin, MiniCssExtractPlugin, HtmlWebpackPlugin
 
 Структура проекта
-src/
-  ├── pug/
-  │    └── pages/
-  │         └── index.pug
-  ├── scss/
-  │    └── main.scss
-  ├── assets/
-  │    ├── img/
-  │    ├── icons/
-  │    └── fonts/
-  └── index.js
-dist/
-webpack.config.js
-package.json
+src/  
+  ├── pug/  
+  │    └── pages/  
+  │         └── index.pug  
+  ├── scss/  
+  │    └── main.scss  
+  ├── assets/  
+  │    ├── img/  
+  │    ├── icons/  
+  │    └── fonts/  
+  └── index.js  
+dist/  
+webpack.config.js  
+package.json  
 
-Скрипты в package.json
-{
-  "scripts": {
-    "dev": "webpack serve",
-    "build": "webpack --mode production"
-  }
-}
+Скрипты в package.json  
+{  
+  "scripts": {  
+    "dev": "webpack serve",  
+    "build": "webpack --mode production"  
+  }  
+}  
 
 
 

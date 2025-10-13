@@ -5,13 +5,12 @@
 
 .footer-top__container {
   display: flex;
-  gap: 274px;
+  gap: 217px;
 
 }
 
 .footer-top__columns {
   display: flex;
-  min-width: 676px;
   flex: 1;
   gap: 140px;
 }
@@ -63,13 +62,13 @@
   padding-bottom: 86px;
 }
 
-.footer-bottom-top {
+.footer-bottom__text {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.footer-bottom-top::after {
+.footer-bottom__text::after {
   content: "";
   position: absolute;
   bottom: -25px;
@@ -79,33 +78,33 @@
   background-color: #E9ECEF;
 }
 
-.footer-bottom-top__privacy {
+.footer-bottom__privacy {
   color: black;
   font-size: 24px;
   letter-spacing: -0.38px;
 }
 
-.footer-bottom-top__socials {
+.footer-bottom__socials {
   color: black;
   font-size: 24px;
   letter-spacing: -0.38px;
   margin-right: -30px;
 }
 
-.footer-bottom-bottom {
+.footer-bottom__legal {
   color: black;
   display: flex;
   justify-content: space-between;
   padding-top: 48px;
 }
 
-.footer-bottom-bottom__left {
+.footer-bottom__copyright {
   color: black;
   font-size: 16px;
   letter-spacing: 0.5px;
 }
 
-.footer-bottom-bottom__right {
+.footer-bottom__payment-logos {
   margin-right: -32px;
   height: 20px;
 }

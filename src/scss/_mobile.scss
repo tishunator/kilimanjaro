@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
   body {
     font-size: 20px;
   }
@@ -219,6 +219,7 @@
     right: 52%;
     transform: translate(50%, -90%);
     gap: 8px;
+    z-index: 10;
   }
 
   .glide .glide__arrow {
@@ -425,5 +426,11 @@
 
   .footer-bottom__text::after {
     left: 0;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1650px) {
+  body {
+    padding: 0 30px;
   }
 }

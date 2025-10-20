@@ -5,14 +5,14 @@
 
 .footer-top__container {
   display: flex;
-  gap: 217px;
+  gap: 215px;
 
 }
 
 .footer-top__columns {
   display: flex;
   flex: 1;
-  gap: 140px;
+  gap: 115px;
 }
 
 .footer-top__column {
@@ -32,7 +32,8 @@
 }
 
 .footer-top__contact {
-  flex: 1;
+  position: relative;
+  left: 30px;
 }
 
 .footer-top__text {

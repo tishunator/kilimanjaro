@@ -82,6 +82,16 @@
     font-size: 16px;
   }
 
+
+  .hero-glide.glide .glide__slide {
+    position: relative;
+    min-height: 500px;
+  }
+
+  .hero-glide.glide .glide__arrows {
+    transform: translate(-4%, 100px);
+  }
+
   .booking {
 
     margin-top: 50px;

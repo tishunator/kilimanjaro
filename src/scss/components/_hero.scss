@@ -8,6 +8,7 @@
 .hero__background img {
   position: absolute;
   z-index: -1;
+  filter: brightness(0.6);
 }
 
 .section-title {
@@ -80,82 +81,47 @@
   padding-top: 33px;
 }
 
-.hero__arrow--prev {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid $color-white;
-  ;
-  background-color: transparent;
-  cursor: pointer;
-}
+.hero-glide {
+  overflow: hidden;
 
-.hero__arrow--prev::before {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 2px;
-  background-color: $color-white;
-  ;
-  left: 17px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  &.glide {
+    position: relative;
 
-.hero__arrow--prev::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid $color-white;
-  ;
-  border-left: 2px solid $color-white;
-  ;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-}
+    .glide__track {
+      overflow: hidden;
+    }
 
-.hero__arrow--next {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid $color-white;
-  ;
-  background-color: transparent;
-  cursor: pointer;
-}
+    .glide__slides {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
 
-.hero__arrow--next::before {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 2px;
-  background-color: $color-white;
-  ;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+    .glide__slide {
+      width: 100%;
+      flex-shrink: 0;
+      min-height: 646px;
+    }
 
-.hero__arrow--next::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid $color-white;
-  ;
-  border-left: 2px solid $color-white;
-  ;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%) rotate(135deg);
+    .hero__arrow {
+      cursor: pointer;
+    }
+
+    .glide__arrows {
+      display: flex;
+      justify-content: center;
+      transform: translateX(-21%);
+      margin-top: 57px;
+    }
+
+    .glide__arrow {
+      border: none;
+      cursor: pointer;
+    }
+
+    .glide__arrow--right {
+      right: 3em;
+    }
+  }
+
 }

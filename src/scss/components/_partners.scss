@@ -4,6 +4,12 @@
   padding-left: 30px;
 }
 
-.partners__img-mobile {
-  display: none;
+.partners__list {
+  display: flex;
+}
+
+.partners__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

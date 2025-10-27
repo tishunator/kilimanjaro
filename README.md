@@ -6,7 +6,7 @@
 Готовая сборка сохраняется в папку `dist`.
 
 ## Демо
-Сайт доступен по адресу: [https://tishunator.github.io/kilimanjaro/]https://tishunator.github.io/kilimanjaro/
+Сайт доступен по адресу: [https://tishunator.github.io/kilimanjaro/](https://tishunator.github.io/kilimanjaro/)
 
 ## Макет
 

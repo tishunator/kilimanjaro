@@ -5,6 +5,9 @@
 Используются **Pug** для шаблонов и **SCSS** для стилей.  
 Готовая сборка сохраняется в папку `dist`.
 
+## Демо
+Сайт доступен по адресу: [https://tishunator.github.io/kilimanjaro/]https://tishunator.github.io/kilimanjaro/
+
 ## Макет
 
 Верстка выполнена по макету в **Pixel Perfect**.  
@@ -38,12 +41,6 @@ CopyWebpackPlugin, MiniCssExtractPlugin, HtmlWebpackPlugin
 
 
 **Скрипты в package.json**   
-{  
-  "scripts": {  
-    "dev": "webpack serve",  
-    "build": "webpack --mode production"  
-  }  
-}  
-
+<pre> ```json { "scripts": { "dev": "webpack serve", "build": "webpack --mode production" } } ``` </pre>
 
 

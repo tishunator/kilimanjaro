@@ -69,10 +69,6 @@
     font-size: 16px;
   }
 
-  .hero__arrows {
-    padding-top: 15px;
-  }
-
   .hero__payment::before {
     content: none;
     display: none;
@@ -80,17 +76,9 @@
 
   .hero__payment-text {
     font-size: 16px;
+    margin-top: 25px;
   }
 
-
-  .hero-glide.glide .glide__slide {
-    position: relative;
-    min-height: 500px;
-  }
-
-  .hero-glide.glide .glide__arrows {
-    transform: translate(-4%, 100px);
-  }
 
   .booking {
 
@@ -98,6 +86,7 @@
     margin-left: 0;
     background-color: transparent;
     box-shadow: none;
+    min-width: 343px;
   }
 
   .booking__container {
@@ -322,6 +311,7 @@
   .partners__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
   }
 
   .contacts {

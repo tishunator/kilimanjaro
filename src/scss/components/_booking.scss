@@ -4,6 +4,7 @@
   position: relative;
   z-index: 10;
   max-width: 1328px;
+  min-width: 1328px;
   margin: 52px auto;
   padding: 0;
   border-radius: 15px;
@@ -14,6 +15,7 @@
 
 .booking__container {
   padding: 49px 38px 8px 73px;
+  margin-top: 147px;
 }
 
 .booking__title.sr-only {
